@@ -107,7 +107,7 @@ public class LanguageModel {
         }
         String window=initialText.substring(initialText.length()-windowLength);
         String genText=window;
-        while(textLength!=genText.length())
+        while(textLength!=genText.length()-windowLength)
         {
             if(CharDataMap.get(window)==null)
             {
